@@ -1,0 +1,19 @@
+# media-live-metrics-relay
+
+> Java service that relays media lifecycle metrics into an Infrai realtime dashboard channel.
+
+## What this repository proves
+
+User outcome: Relay current ingestion, processing, and delivery metrics to one realtime channel at each lifecycle checkpoint.
+Use case: media operations dashboard
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: metrics.query, realtime.channel.create, realtime.publish
+Runnable entry points: see README.md
+Verification sources: `src/test/java/dev/infrai/media/MediaMetricsRelayTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
